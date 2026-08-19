@@ -1,5 +1,6 @@
 body{
     background-color: aliceblue;
+    background-image: url("./images/wallp.jpeg");
 }
 .box {
     max-width: 1250px;
@@ -8,19 +9,24 @@ body{
     gap: 5px;
     grid-template-columns:200px auto 200px;
     padding: 30px;
-footer, main, nav, picture, timedate, header {
-    background-color: whitesmoke;
+footer, main, nav, picture, timedate, header, logo {
+    background-image: url("./images/tex_wallp.jpeg");
     border: 3px solid black;
     color: auto; /*font colour*/
-    font-family: "Courier Prime", monospace;
+    font-size: 17px;
 
     padding: 7px;
+}
+logo{
+    grid-row:1/2;
+    grid-column:1/2;
+    text-align: center;
 }
 header{
     grid-row:1/2;
     grid-column:2/3;
     text-align: center;
-    
+
 }
 timedate {
     grid-row:1/2;
@@ -34,12 +40,10 @@ picture {
 nav {
     grid-row:2/3;
     grid-column:1/2;
-    height:max-content;
 }
 main {
     grid-row:2/3;
     grid-column:2/3;
-    height:max-content;
 }
 footer {
     grid-row:3/4;
